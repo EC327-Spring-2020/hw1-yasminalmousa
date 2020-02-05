@@ -1,0 +1,17 @@
+mov R0,1 ;R0 contains 1
+mov R1,2 ;R1 contains 2
+mov R2,3 ;R2 contains 3
+mov [R0],R0 ;store the content of R0 at the address stored in R0 - after this instruction memory cell 1 contains 1
+mov [R1],R1 ;store the content of R1 at the address stored in R1 - after this instruction memory cell 2 contains 2
+mov [R2],R2 ;store the content of R0 at the address stored in R0 - after this instruction memory cell 3 contains 3
+mov R3,0 ;R3 contains 0
+mov R4,0 ;R4 contains 0
+cmp R2,R3 ;compares the value of R2 with the value of R3
+je 44 ;jumps to line 44 if equal
+add R0,R4 ;adds the value of R0 to the value of R4 and stores it in R0
+inc R3 ;increments the value of R3 by 1
+jmp 39 ;unconditional jump to 39 to compare again
+add R0,R2 ;adds the value of R0 to R2 and stores it in R0
+mov R5,4 ;R5 contains 4
+mov [R5],R0 ;;store the content of R0 at the address stored in R5 - after this instruction memory cell 4 contains 5
+halt
