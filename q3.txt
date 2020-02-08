@@ -1,24 +1,25 @@
-mov R0,0
-mov R1,1
-mov R2,2
-mov [R1],R0
-mov [R2],R1
-mov R3,3
-add R0,R1
-mov [R3],R0
-add R1,R0
-mov R3,4
-mov [R3],R1
-add R0,R1
-mov R3,5
-mov [R3],R0
-add R1,R0
-mov R3,6
-mov [R3],R1
-add R0,R1
-mov R3,7
-mov [R3],R0
-add R1,R0
-mov R3,8
-mov [R3],R1
-halt
+Address		Assembly	Comments
+31		mov R0,0
+32		mov R1,1
+33		mov R2,2
+34		mov [R1],R0
+35		mov [R2],R1
+36		mov R3,3
+37		add R0,R1
+38		mov [R3],R0
+39		add R1,R0
+40		mov R3,4
+41		mov [R3],R1
+42		add R0,R1
+43		mov R3,5
+44		mov [R3],R0
+45		add R1,R0
+46		mov R3,6
+47		mov [R3],R1
+48		add R0,R1
+49		mov R3,7
+50		mov [R3],R0
+51		add R1,R0
+52		mov R3,8
+53		mov [R3],R1   ;Result of (a*b)+c where a=1 b=2 c=3 is stored in memory location 4
+54		halt
