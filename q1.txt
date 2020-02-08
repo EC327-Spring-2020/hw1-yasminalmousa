@@ -1,11 +1,12 @@
-mov R1, 25 ;R1 contains 25
-mov R2, 3 ;R2 contains 3
-mov [R1], R2 ;store the content of R2 at the address stored in R1 - after this instruction, memory cell 25 contains 3
-mov R3, R2 ;store the content of R2 (which is 3) into register R3 which is where we will be conducting the 'multiplication'
-add R3, R2 ;adds the content of R2 (which is 3) to R3 (which is 3), produces a result of multiplying the content of R2 by 2 and storing it in R3
-add R3, R2 ;adds the content of R2 to R3 (multiplying the content of R2 by 3 and storing in R3)
-add R3, R2 ;adds the content of R2 to R3 (multiplying the content of R2 by 4 and storing in R3)
-add R3, R2 ;adds the content of R2 to R3 (multiplying the content of R2 by 5 and storing in R3)
-add R3, R2 ;adds the content of R2 to R3 (multiplying the content of R2 by 6 and storing in R3)
-mov R4, 10 ;R4 contains 10
-mov [R4], R3 ;store the content of R3 at the address stored in R4 - after this instruction, memory cell 10 contains 18
+Address		Assembly	Comments
+31		mov R1, 25 	;R1 contains 25
+32		mov R2, 3 	;R2 contains 3
+33		mov [R1], R2 	;store the content of R2 at the address stored in R1 - after this instruction, memory cell 25 contains 3
+34		mov R3, R2 	;store the content of R2 (which is 3) into register R3 which is where we will be conducting the          'multiplication'
+35		add R3, R2 	;adds the content of R2 (which is 3) to R3 (which is 3), produces a result of multiplying the content of R2 by 2 and storing it in 				R3
+36		add R3, R2 	;adds the content of R2 to R3 (multiplying the content of R2 by 3 and storing in R3)
+37		add R3, R2 	;adds the content of R2 to R3 (multiplying the content of R2 by 4 and storing in R3)
+38		add R3, R2 	;adds the content of R2 to R3 (multiplying the content of R2 by 5 and storing in R3)
+39		add R3, R2 	;adds the content of R2 to R3 (multiplying the content of R2 by 6 and storing in R3)
+40		mov R4, 10 	;R4 contains 10
+41		mov [R4], R3 	;store the content of R3 at the address stored in R4 - after this instruction, memory cell 10 contains 18
